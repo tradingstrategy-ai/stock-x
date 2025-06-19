@@ -7,7 +7,8 @@
 
 ## FORK
 
-This is the fork of original Stock-X repository. 
+This is the fork of original Stock-X repository from the paper [Predicting Stock Market time-series data using
+CNN-LSTM Neural Network model](https://arxiv.org/pdf/2305.14378) by Aadhitya, Rajapriya, Vineetha and Anurag.
 
 - The fork was done for the result reproducibility (code was not runnable) 
 - The instructions to run the code were added. 
