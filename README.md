@@ -5,6 +5,26 @@
 ![Release](https://img.shields.io/github/v/release/Circle-1/Stock-X)
 [![Heroku](https://img.shields.io/badge/Heroku-Active-blue?logo=heroku)](https://stock-x-proj.herokuapp.com/)
 
+## FORK
+
+This is the fork of original Stock-X repository. The fork was done for the result reproducibility. The instructions to run the code were added. The code was modified to run outside Kaggle, making it possible to install with its dependencies with [poetry](https://github.com/python-poetry/).
+`stock-market-prediction-using-cnn-lstm.ipynb` was bug fixed to run by default using IBM stock, as the run was not reproductible in the original Github repo.
+
+The following environment variables are needed
+
+- `ALPHAVANTAGE_API_KEY`: Get the free API key from [AlphaVantage](https://www.alphavantage.co/support/#api-key)
+
+We use [python-dotenv package](https://github.com/theskumar/python-dotenv) so you can edit `.env` file and add there.
+
+To run the original code, clone this repository and then:
+
+```shell
+export 
+poetry install
+# Open in Visual Studio Code
+ipython stock-market-prediction-using-cnn-lstm.ipynb 
+```
+
 ## ⚠️ **MODEL is now available at Hugging Face: https://huggingface.co/kryox64/stock-x** with DOI ⚠️
 
 This project is all about analysis of Stock Market and providing suggestions to stockholders to invest in right company
