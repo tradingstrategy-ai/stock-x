@@ -10,6 +10,8 @@
 This is the fork of original Stock-X repository from the paper [Predicting Stock Market time-series data using
 CNN-LSTM Neural Network model](https://arxiv.org/pdf/2305.14378) by Aadhitya, Rajapriya, Vineetha and Anurag.
 
+Read the [reproducible CNN-LSTM notebook here](./stock-market-prediction-using-cnn-lstm.ipynb).
+
 - The fork was done for the result reproducibility (code was not runnable) 
 - The instructions to run the code were added. 
 - The code was modified to run outside Kaggle.
