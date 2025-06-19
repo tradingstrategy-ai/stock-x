@@ -7,8 +7,18 @@
 
 ## FORK
 
-This is the fork of original Stock-X repository. The fork was done for the result reproducibility. The instructions to run the code were added. The code was modified to run outside Kaggle, making it possible to install with its dependencies with [poetry](https://github.com/python-poetry/).
-`stock-market-prediction-using-cnn-lstm.ipynb` was bug fixed to run by default using IBM stock, as the run was not reproductible in the original Github repo.
+This is the fork of original Stock-X repository. 
+
+- The fork was done for the result reproducibility (code was not runnable) 
+- The instructions to run the code were added. 
+- The code was modified to run outside Kaggle.
+- The project was made to possible to install with its dependencies with [poetry](https://github.com/python-poetry/).
+- `stock-market-prediction-using-cnn-lstm.ipynb` was bug fixed 
+- The notebook was changed train the model IBM stock data through AlphaVantage (not sure how the origina stock data was accessed)
+- The notebook was changed to cross-validate the model on MSFT stock (not sure if this is supposed to work in the first place, because I am not sure if data is normalised at all)
+- More common statistics used in machine learning benchmarks added (MAE, MAPE, etc.), 
+  these may or may not be sensible in the context of this project
+- Bug fixes, bug fixes, bug fixes to make code runnable
 
 The following environment variables are needed
 
@@ -19,9 +29,10 @@ We use [python-dotenv package](https://github.com/theskumar/python-dotenv) so yo
 To run the original code, clone this repository and then:
 
 ```shell
-export 
+brew install graphviz # MacOS, needed for plot_model()
 poetry install
-# Open in Visual Studio Code
+# Open this file in Visual Studio Code to run with Jupyter editor,
+# instead of running from command line
 ipython stock-market-prediction-using-cnn-lstm.ipynb 
 ```
 
